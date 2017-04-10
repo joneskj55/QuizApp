@@ -26,7 +26,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <!--question one-->
-        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        <RadioGroup
             style="@style/questionSpacing"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
@@ -38,24 +38,23 @@
                 android:text="1. Is this where the first question will go?"></TextView>
 
             <RadioButton
-                android:id="@+id/chioce_1_question_1"
+                android:id="@+id/choice_1_question_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="onRadioButtonClicked"
                 android:text="First answer number one" />
 
             <RadioButton
-                android:id="@+id/chioce_2_question_1"
+                android:id="@+id/choice_2_question_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="onRadioButtonClicked"
+                android:onClick="questionOne"
                 android:text="Second answer number one" />
 
             <RadioButton
-                android:id="@+id/chioce_3_question_1"
+                android:id="@+id/choice_3_question_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="onRadioButtonClicked"
+                android:onClick=""
                 android:text="Third answer number one" />
         </RadioGroup>
 
@@ -75,7 +74,8 @@
                 android:id="@+id/answer_question_2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Type your answer here" />
+                android:hint="Type your answer here"
+                android:onClick="questionTwo"/>
         </LinearLayout>
 
         <!--question three-->
@@ -128,7 +128,7 @@
         </LinearLayout>
 
         <!--question four-->
-        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        <RadioGroup
             style="@style/questionSpacing"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
@@ -140,29 +140,27 @@
                 android:text="4. Is this where the fourth question will go?" />
 
             <RadioButton
-                android:id="@+id/chioce_1_question_4"
+                android:id="@+id/choice_1_question_4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="onRadioButtonClicked"
-                android:text="First answer number four" />
+                android:text="First answer number four"
+                android:onClick="questionFour"/>
 
             <RadioButton
-                android:id="@+id/chioce_2_question_4"
+                android:id="@+id/choicce_2_question_4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="onRadioButtonClicked"
                 android:text="Second answer number four" />
 
             <RadioButton
-                android:id="@+id/chioce_3_question_4"
+                android:id="@+id/choice_3_question_4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="onRadioButtonClicked"
                 android:text="Third answer number four" />
         </RadioGroup>
 
         <!--question five-->
-        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        <RadioGroup
             style="@style/questionSpacing"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
@@ -174,25 +172,23 @@
                 android:text="5. Is this where the fifth question will go?"></TextView>
 
             <RadioButton
-                android:id="@+id/chioce_1_question_5"
+                android:id="@+id/choicce_1_question_5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="onRadioButtonClicked"
                 android:text="First answer number five" />
 
             <RadioButton
-                android:id="@+id/chioce_2_question_5"
+                android:id="@+id/choice_2_question_5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="onRadioButtonClicked"
                 android:text="Second answer number five" />
 
             <RadioButton
-                android:id="@+id/chioce_3_question_5"
+                android:id="@+id/choice_3_question_5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="onRadioButtonClicked"
-                android:text="Third answer number five" />
+                android:text="Third answer number five"
+                android:onClick="questionFive"/>
         </RadioGroup>
 
         <!--submit test button-->
@@ -202,8 +198,9 @@
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="32dp"
-            android:onClick="tallyScore"
+            android:onClick="submitTest"
             android:text="Submit Test" />
 
     </LinearLayout>
+
 </ScrollView>
