@@ -3,6 +3,7 @@ package com.example.android.quizapp;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.Toast;
@@ -37,8 +38,17 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public void questionThree() {
+    public void questionThree(View view) {
+        CheckBox firstCorrectChoice = (CheckBox) findViewById(R.id.choice_1_question_3);
+        CheckBox secondCorrectChoice = (CheckBox) findViewById(R.id.choice_2_question_3);
+        CheckBox thirdCorrectChoice = (CheckBox) findViewById(R.id.choice_3_question_3);
+        boolean userFirstCorrect = firstCorrectChoice.isChecked();
+        boolean userSecondCorrect = secondCorrectChoice.isChecked();
+        boolean userThirdCorrect = thirdCorrectChoice.isChecked();
 
+        if (userFirstCorrect && userSecondCorrect && userThirdCorrect) {
+            score = score + 1;
+        }
     }
 
     public void questionFour(View view) {
