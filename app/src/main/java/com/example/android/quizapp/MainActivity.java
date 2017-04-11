@@ -7,10 +7,11 @@ import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.Toast;
 
+import java.util.Objects;
+
 public class MainActivity extends AppCompatActivity {
 
     int score = 0;
-    boolean answerIsCorrect = true; //might not need this variable
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         EditText numberTwoUserAnswer = (EditText) findViewById(R.id.answer_question_2);
         String userAnswer = numberTwoUserAnswer.getText().toString();
 
-        if (answerForNumberTwo == userAnswer) {
+        if (Objects.equals(answerForNumberTwo, userAnswer)) {
             score = score + 1;
         }
     }
