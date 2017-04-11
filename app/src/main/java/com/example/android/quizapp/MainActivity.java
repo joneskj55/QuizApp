@@ -26,12 +26,12 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public void questionTwo() {
-        String answerForNumberTwo = "This is it.";
+    public void questionTwo(View view) {
+        String answerForNumberTwo = "This is it. ";
         EditText numberTwoUserAnswer = (EditText) findViewById(R.id.answer_question_2);
         String userAnswer = numberTwoUserAnswer.getText().toString();
 
-        if (userAnswer == answerForNumberTwo) {
+        if (answerForNumberTwo == userAnswer) {
             score = score + 1;
         }
     }
@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void submitTest(View view) {
-//        questionTwo();
-        Toast.makeText(this, "Out of a total score of 5, your scored " + score, Toast.LENGTH_SHORT).show();
+        questionTwo(view);
+        Toast.makeText(this, "Your score: " + score + "/5", Toast.LENGTH_SHORT).show();
     }
 }
