@@ -72,6 +72,7 @@
                 android:id="@+id/answer_question_2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
                 android:hint="Type your answer here" />
         </LinearLayout>
 
@@ -91,8 +92,6 @@
                 android:id="@+id/choice_1_question_3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-
                 android:text="Check 1"
                 android:textSize="16sp" />
 
@@ -100,8 +99,6 @@
                 android:id="@+id/choice_2_question_3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-
                 android:text="Check 2"
                 android:textSize="16sp" />
 
@@ -109,8 +106,6 @@
                 android:id="@+id/choice_3_question_3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-
                 android:text="Check 3"
                 android:textSize="16sp" />
 
@@ -118,8 +113,6 @@
                 android:id="@+id/choice_4_question_3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-
                 android:text="Check 4"
                 android:textSize="16sp" />
         </LinearLayout>
@@ -187,6 +180,7 @@
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="32dp"
+            android:layout_marginLeft="16dp"
             android:onClick="submitTest"
             android:text="Submit Test" />
 
