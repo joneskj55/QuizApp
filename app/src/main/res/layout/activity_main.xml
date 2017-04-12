@@ -19,7 +19,7 @@
             style="@style/questionSpacing"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Welcome to the quiz app!"
+            android:text="@string/welcome_to_the_quiz_app"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
@@ -35,25 +35,25 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="1. Is this where the first question will go?"></TextView>
+                android:text="@string/_1_which_of_the_following_languages_is_back_end"></TextView>
 
             <RadioButton
                 android:id="@+id/choice_1_question_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="First answer number one" />
+                android:text="@string/css" />
 
             <RadioButton
                 android:id="@+id/choice_2_question_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Second answer number one" />
+                android:text="@string/java" />
 
             <RadioButton
                 android:id="@+id/choice_3_question_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Third answer number one" />
+                android:text="@string/html" />
         </RadioGroup>
 
         <!--question two-->
@@ -66,7 +66,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="2. Is this where the second question will go?"></TextView>
+                android:text="@string/declare_a_variable_in_java_with_a_value_of_the_number_17_and_a_name_of_total"></TextView>
 
             <EditText
                 android:id="@+id/answer_question_2"

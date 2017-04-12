@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Quiz App</string>
+    <string name="welcome_to_the_quiz_app">Welcome to the quiz app!</string>
+    <string name="_1_which_of_the_following_languages_is_back_end">1. Which of the following languages is back-end?</string>
+    <string name="java">Java</string>
+    <string name="css">CSS</string>
+    <string name="html">HTML</string>
+    <string name="_2_declare_a_variable_in_java_with_a_value_of_the_number_17">2. Declare a variable in Java with a value of the number 17.</string>
+    <string name="declare_a_variable_in_java_with_a_value_of_the_number_17_and_a_name_of_total">Declare a variable in Java with a value of the number 17 and a name of total.</string>
+    <string name="number_two_user_answer">int total = 17;</string>
 </resources>

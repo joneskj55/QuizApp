@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         //question 2
-        String answerForNumberTwo = "This is it. ";
+        String answerForNumberTwo = getString(R.string.number_two_user_answer);
         EditText numberTwoUserAnswer = (EditText) findViewById(R.id.answer_question_2);
         String userAnswer = numberTwoUserAnswer.getText().toString();
 
@@ -71,11 +71,12 @@ public class MainActivity extends AppCompatActivity {
             score = score + 1;
         }
 
-        //if user selects wrong answer they will lose a point
-        if (userFirstCorrect && userSecondCorrect && userThirdCorrect &&userFourthCheckBox) {
-            score = score -1;
+        //if user selects wrong answer for question 3 they will lose a point
+        if (userFirstCorrect && userSecondCorrect && userThirdCorrect && userFourthCheckBox) {
+            score = score - 1;
         }
 
+        //test complete
         Toast.makeText(this, "Your score: " + score + "/5", Toast.LENGTH_LONG).show();
         score = 0; //resets score
         setContentView(R.layout.activity_main); //resets test
