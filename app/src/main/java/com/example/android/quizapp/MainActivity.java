@@ -42,11 +42,13 @@ public class MainActivity extends AppCompatActivity {
         CheckBox firstCorrectChoice = (CheckBox) findViewById(R.id.choice_1_question_3);
         CheckBox secondCorrectChoice = (CheckBox) findViewById(R.id.choice_2_question_3);
         CheckBox thirdCorrectChoice = (CheckBox) findViewById(R.id.choice_3_question_3);
+        CheckBox fourthCheckBox = (CheckBox) findViewById(R.id.choice_4_question_3);
+
         boolean userFirstCorrect = firstCorrectChoice.isChecked();
         boolean userSecondCorrect = secondCorrectChoice.isChecked();
         boolean userThirdCorrect = thirdCorrectChoice.isChecked();
+        boolean userFourthCheckBox = fourthCheckBox.isChecked();
 
-        //TODO: USER WILL GET A POINT IF ALL ANSWERS ARE CHECKED; NEED TO FIX THIS
         if (userFirstCorrect && userSecondCorrect && userThirdCorrect) {
             score = score + 1;
         }
@@ -63,6 +65,11 @@ public class MainActivity extends AppCompatActivity {
         boolean answerForNumberFive = numberFiveCorrectAnswer.isChecked();
         if (answerForNumberFive) {
             score = score + 1;
+        }
+
+        //if user selected fourth checkbox they will lose a point
+        if (userFourthCheckBox) {
+            score = score - 1;
         }
 
         Toast.makeText(this, "Your score: " + score + "/5", Toast.LENGTH_SHORT).show();
