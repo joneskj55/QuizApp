@@ -1,5 +1,7 @@
 package com.example.android.quizapp;
 
+import android.os.PersistableBundle;
+import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -74,6 +76,7 @@ public class MainActivity extends AppCompatActivity {
 
         Toast.makeText(this, "Your score: " + score + "/5", Toast.LENGTH_SHORT).show();
         score = 0; //resets score
+        setContentView(R.layout.activity_main); //resets test
     }
 }
 
