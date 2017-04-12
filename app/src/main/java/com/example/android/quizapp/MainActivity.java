@@ -20,15 +20,16 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void questionOne(View view) {
+    //check all answers, display toast message with score
+    public void submitTest(View view) {
+        //question 1
         RadioButton numberOneCorrectAnswer = (RadioButton) findViewById(R.id.choice_2_question_1);
         boolean answerForNumberOne = numberOneCorrectAnswer.isChecked();
         if (answerForNumberOne) {
             score = score + 1;
         }
-    }
 
-    public void questionTwo(View view) {
+        //question 2
         String answerForNumberTwo = "This is it. ";
         EditText numberTwoUserAnswer = (EditText) findViewById(R.id.answer_question_2);
         String userAnswer = numberTwoUserAnswer.getText().toString();
@@ -36,9 +37,8 @@ public class MainActivity extends AppCompatActivity {
         if (Objects.equals(answerForNumberTwo, userAnswer)) {
             score = score + 1;
         }
-    }
 
-    public void questionThree(View view) {
+        //question 3
         CheckBox firstCorrectChoice = (CheckBox) findViewById(R.id.choice_1_question_3);
         CheckBox secondCorrectChoice = (CheckBox) findViewById(R.id.choice_2_question_3);
         CheckBox thirdCorrectChoice = (CheckBox) findViewById(R.id.choice_3_question_3);
@@ -46,29 +46,28 @@ public class MainActivity extends AppCompatActivity {
         boolean userSecondCorrect = secondCorrectChoice.isChecked();
         boolean userThirdCorrect = thirdCorrectChoice.isChecked();
 
+        //TODO: USER WILL GET A POINT IF ALL ANSWERS ARE CHECKED; NEED TO FIX THIS
         if (userFirstCorrect && userSecondCorrect && userThirdCorrect) {
             score = score + 1;
         }
-    }
 
-    public void questionFour(View view) {
+        //question 4
         RadioButton numberFourCorrectAnswer = (RadioButton) findViewById(R.id.choice_1_question_4);
         boolean answerForNumberFour = numberFourCorrectAnswer.isChecked();
         if (answerForNumberFour) {
             score = score + 1;
         }
-    }
 
-    public void questionFive(View view) {
+        //question 5
         RadioButton numberFiveCorrectAnswer = (RadioButton) findViewById(R.id.choice_3_question_5);
         boolean answerForNumberFive = numberFiveCorrectAnswer.isChecked();
         if (answerForNumberFive) {
             score = score + 1;
         }
-    }
 
-    public void submitTest(View view) {
-        questionTwo(view);
         Toast.makeText(this, "Your score: " + score + "/5", Toast.LENGTH_SHORT).show();
+        score = 0; //resets score
     }
 }
+
+

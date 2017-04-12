@@ -47,7 +47,6 @@
                 android:id="@+id/choice_2_question_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="questionOne"
                 android:text="Second answer number one" />
 
             <RadioButton
@@ -93,33 +92,34 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
+
                 android:text="Check 1"
-                android:textSize="16sp"
-                android:onClick="questionThree"/>
+                android:textSize="16sp" />
 
             <CheckBox
                 android:id="@+id/choice_2_question_3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
+
                 android:text="Check 2"
-                android:textSize="16sp"
-                android:onClick="questionThree"/>
+                android:textSize="16sp" />
 
             <CheckBox
                 android:id="@+id/choice_3_question_3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
+
                 android:text="Check 3"
-                android:textSize="16sp"
-                android:onClick="questionThree"/>
+                android:textSize="16sp" />
 
             <CheckBox
                 android:id="@+id/choice_4_question_3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
+
                 android:text="Check 4"
                 android:textSize="16sp" />
         </LinearLayout>
@@ -140,8 +140,7 @@
                 android:id="@+id/choice_1_question_4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="True"
-                android:onClick="questionFour"/>
+                android:text="True" />
 
             <RadioButton
                 android:id="@+id/choicce_2_question_4"
@@ -178,8 +177,7 @@
                 android:id="@+id/choice_3_question_5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Third answer number five"
-                android:onClick="questionFive"/>
+                android:text="Third answer number five" />
         </RadioGroup>
 
         <!--submit test button-->
@@ -193,5 +191,4 @@
             android:text="Submit Test" />
 
     </LinearLayout>
-
 </ScrollView>
