@@ -77,7 +77,11 @@ public class MainActivity extends AppCompatActivity {
         }
 
         //test complete
-        Toast.makeText(this, "Your score: " + score + "/5", Toast.LENGTH_LONG).show();
+        if (score == 5) {
+            Toast.makeText(this, "Great job! You got them all correct!", Toast.LENGTH_LONG).show();
+        } else {
+            Toast.makeText(this, "Your score: " + score + "/5", Toast.LENGTH_LONG).show();
+        }
         score = 0; //resets score
         setContentView(R.layout.activity_main); //resets test
     }

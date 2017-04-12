@@ -10,7 +10,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
 
         <!--app welcome message-->
@@ -35,7 +35,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/_1_which_of_the_following_languages_is_back_end"></TextView>
+                android:text="@string/_1_which_of_the_following_languages_is_back_end" />
 
             <RadioButton
                 android:id="@+id/choice_1_question_1"
@@ -66,14 +66,15 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/declare_a_variable_in_java_with_a_value_of_the_number_17_and_a_name_of_total"></TextView>
+                android:text="@string/_2_declare_a_variable_in_java_with_a_value_of_the_number_17_and_a_name_of_total" />
 
             <EditText
                 android:id="@+id/answer_question_2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
                 android:layout_marginRight="16dp"
-                android:hint="Type your answer here" />
+                android:hint="@string/type_your_answer_here" />
         </LinearLayout>
 
         <!--question three-->
@@ -86,34 +87,34 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="3. Is this where the third question will go?" />
+                android:text="@string/_3_which_of_the_following_are_valid_primitive_data_types_in_the_java_programming_language" />
 
             <CheckBox
                 android:id="@+id/choice_1_question_3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Check 1"
+                android:text="@string/boolean_choice"
                 android:textSize="16sp" />
 
             <CheckBox
                 android:id="@+id/choice_2_question_3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Check 2"
+                android:text="@string/int_choice"
                 android:textSize="16sp" />
 
             <CheckBox
                 android:id="@+id/choice_3_question_3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Check 3"
+                android:text="@string/double_choice"
                 android:textSize="16sp" />
 
             <CheckBox
                 android:id="@+id/choice_4_question_3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Check 4"
+                android:text="@string/bit"
                 android:textSize="16sp" />
         </LinearLayout>
 
@@ -127,19 +128,19 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="4. Is this where the fourth question will go?" />
+                android:text="@string/_4_java_was_actually_invented_by_accident_while_trying_to_clean_up_c" />
 
             <RadioButton
                 android:id="@+id/choice_1_question_4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="True" />
+                android:text="@string/true_choice" />
 
             <RadioButton
                 android:id="@+id/choicce_2_question_4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="False" />
+                android:text="@string/false_choice" />
         </RadioGroup>
 
         <!--question five-->
@@ -152,37 +153,36 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="5. Is this where the fifth question will go?"></TextView>
+                android:text="@string/_5_which_markup_language_is_used_in_android_applications" />
 
             <RadioButton
-                android:id="@+id/choicce_1_question_5"
+                android:id="@+id/choice_1_question_5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="First answer number five" />
+                android:text="@string/html" />
 
             <RadioButton
                 android:id="@+id/choice_2_question_5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Second answer number five" />
+                android:text="@string/xhtml" />
 
             <RadioButton
                 android:id="@+id/choice_3_question_5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Third answer number five" />
+                android:text="@string/xml" />
         </RadioGroup>
 
         <!--submit test button-->
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
             android:layout_marginBottom="32dp"
             android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
             android:onClick="submitTest"
-            android:text="Submit Test" />
+            android:text="@string/submit_test" />
 
     </LinearLayout>
 </ScrollView>
