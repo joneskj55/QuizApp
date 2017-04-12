@@ -51,7 +51,9 @@ public class MainActivity extends AppCompatActivity {
         boolean userThirdCorrect = thirdCorrectChoice.isChecked();
         boolean userFourthCheckBox = fourthCheckBox.isChecked();
 
-        if (userFirstCorrect && userSecondCorrect && userThirdCorrect) {
+        boolean correctAnswerNumberThree = userFirstCorrect && userSecondCorrect && userThirdCorrect;
+
+        if (correctAnswerNumberThree) {
             score = score + 1;
         }
 
@@ -69,12 +71,12 @@ public class MainActivity extends AppCompatActivity {
             score = score + 1;
         }
 
-        //if user selected fourth checkbox they will lose a point
-        if (userFourthCheckBox) {
-            score = score - 1;
+        //if user selects wrong answer they will lose a point
+        if (userFirstCorrect && userSecondCorrect && userThirdCorrect &&userFourthCheckBox) {
+            score = score -1;
         }
 
-        Toast.makeText(this, "Your score: " + score + "/5", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Your score: " + score + "/5", Toast.LENGTH_LONG).show();
         score = 0; //resets score
         setContentView(R.layout.activity_main); //resets test
     }
